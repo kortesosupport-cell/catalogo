@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexus Talent Inc. — Vision B: La Force Opérationnelle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #1E1E1E;
+    font-family: 'Inter', 'Roboto', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 0;
+  }
+
+  /* Vision banner */
+  .vision-banner {
+    width: 794px;
+    background: #E8560A;
+    color: #fff;
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .vision-banner span { opacity: 0.85; font-weight: 400; }
+  .rec-badge {
+    background: #fff;
+    color: #E8560A;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    padding: 4px 10px;
+    border-radius: 2px;
+  }
+
+  /* Page wrapper */
+  .page {
+    width: 794px;
+    min-height: 1123px;
+    background: #fff;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  /* ==================== PAGE 1 ==================== */
+  /* Dark hero */
+  .p1-hero {
+    background: #1A1A1A;
+    position: relative;
+    padding: 52px 52px 44px 52px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  /* Grid lines background */
+  .p1-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  .p1-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 130px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.03);
+    white-space: nowrap;
+    letter-spacing: 8px;
+    pointer-events: none;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .p1-page-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+    position: relative;
+    z-index: 2;
+  }
+  .p1-page-meta .vision-label {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #E8560A;
+    text-transform: uppercase;
+  }
+  .p1-page-meta .page-num {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+  }
+
+  .p1-logo-area {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 32px;
+  }
+
+  .p1-slogan-row {
+    position: relative;
+    z-index: 2;
+  }
+  .p1-slogan {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    color: #E8560A;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .p1-slogan::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #E8560A;
+    flex-shrink: 0;
+  }
+
+  .star-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #E8560A;
+    color: #fff;
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 2px;
+    margin-left: 20px;
+  }
+
+  /* Orange divider */
+  .orange-divider {
+    height: 6px;
+    background: #E8560A;
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .orange-divider-thin {
+    height: 2px;
+    background: #E8560A;
+    width: 100%;
+  }
+
+  /* Light section */
+  .p1-light {
+    background: #F7F7F5;
+    padding: 36px 52px 40px 52px;
+    flex: 1;
+  }
+
+  .section-label {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #8A8A8A;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  /* Color swatches */
+  .color-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .color-swatch {
+    flex: 1;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  }
+  .swatch-color {
+    height: 52px;
+  }
+  .swatch-info {
+    background: #fff;
+    padding: 8px 10px;
+  }
+  .swatch-name {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #1A1A1A;
+    letter-spacing: 0.5px;
+    display: block;
+  }
+  .swatch-hex {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 10px;
+    color: #8A8A8A;
+    display: block;
+  }
+
+  /* Typography section */
+  .typo-section {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+  .typo-card {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #E8E8E6;
+    border-radius: 3px;
+    padding: 16px 18px;
+    border-left: 3px solid #E8560A;
+  }
+  .typo-card .type-label {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #E8560A;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .typo-heading-sample {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    color: #1A1A1A;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .typo-body-sample {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3D3D3D;
+    line-height: 1.6;
+  }
+  .typo-meta {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 9px;
+    color: #8A8A8A;
+    margin-top: 6px;
+  }
+
+  /* Values */
+  .values-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+    align-items: center;
+  }
+  .value-tag {
+    background: #1A1A1A;
+    color: #fff;
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 8px 18px;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+  .value-sep {
+    color: #E8560A;
+    font-weight: 800;
+    font-size: 18px;
+  }
+
+  /* Positioning statement */
+  .positioning-card {
+    background: #1A1A1A;
+    border-left: 4px solid #E8560A;
+    padding: 20px 24px;
+    border-radius: 3px;
+  }
+  .positioning-card p {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #F7F7F5;
+    line-height: 1.7;
+    font-style: italic;
+  }
+  .positioning-card p strong {
+    color: #E8560A;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* ==================== PAGE 2 ==================== */
+  .p2-dark-header {
+    background: #1A1A1A;
+    padding: 22px 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .p2-dark-header .ph-label {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .p2-dark-header .ph-vision {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 11px;
+    color: #E8560A;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .p2-body {
+    background: #F7F7F5;
+    flex: 1;
+    padding: 36px 52px;
+  }
+
+  .email-client-wrapper {
+    background: #2D2D2D;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    margin-bottom: 28px;
+  }
+  .email-client-titlebar {
+    background: #3A3A3A;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .dot-r { background: #FF5F56; }
+  .dot-y { background: #FFBD2E; }
+  .dot-g { background: #27C93F; }
+  .email-client-bar {
+    background: #1A1A1A;
+    padding: 10px 16px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 11px;
+    color: rgba(255,255,255,0.35);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .email-body {
+    background: #fff;
+    padding: 30px 30px 10px 30px;
+  }
+  .email-preview-text {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+  }
+  .email-preview-text strong { color: #1A1A1A; }
+
+  /* Email signature */
+  .email-sig {
+    border-left: 4px solid #E8560A;
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .sig-logo-area { flex-shrink: 0; }
+  .sig-content { flex: 1; }
+
+  .sig-name {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #1A1A1A;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 2px;
+  }
+  .sig-title {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #E8560A;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .sig-company {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #3D3D3D;
+    margin-bottom: 10px;
+  }
+  .sig-divider {
+    height: 1px;
+    background: #E8E8E8;
+    margin: 8px 0;
+  }
+  .sig-contact {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 11px;
+    color: #555;
+    line-height: 1.8;
+  }
+  .sig-contact a { color: #E8560A; text-decoration: none; }
+  .sig-contact strong { color: #1A1A1A; font-weight: 600; }
+  .sig-sectors {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #8A8A8A;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+  .sig-bottom-bar {
+    background: linear-gradient(90deg, #E8560A 0%, #c44400 100%);
+    height: 4px;
+    margin-top: 16px;
+    border-radius: 0 0 0 0;
+  }
+  .sig-website {
+    background: #1A1A1A;
+    padding: 6px 30px;
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+  }
+
+  .compat-note {
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-left: 3px solid #E8560A;
+    padding: 14px 18px;
+    border-radius: 3px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 11px;
+    color: #555;
+    line-height: 1.6;
+  }
+  .compat-note strong { color: #1A1A1A; font-weight: 600; }
+
+  /* ==================== PAGE 3 ==================== */
+  .p3-header {
+    background: #1A1A1A;
+    padding: 0;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .p3-header-top {
+    background: #E8560A;
+    height: 6px;
+  }
+  .p3-header-content {
+    padding: 28px 52px 24px 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .p3-invoice-label {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #E8560A;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .p3-company-name {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .p3-company-sub {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 11px;
+    color: rgba(255,255,255,0.45);
+    margin-top: 4px;
+  }
+  .p3-invoice-meta {
+    text-align: right;
+  }
+  .p3-inv-title {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .p3-inv-num {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 13px;
+    color: #E8560A;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+
+  .p3-body {
+    background: #F7F7F5;
+    flex: 1;
+    padding: 32px 52px 36px 52px;
+  }
+
+  .p3-addresses {
+    display: flex;
+    gap: 0;
+    margin-bottom: 28px;
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid #E0E0E0;
+  }
+  .p3-addr-block {
+    flex: 1;
+    padding: 18px 20px;
+  }
+  .p3-addr-block:first-child {
+    border-right: 1px solid #E0E0E0;
+  }
+  .p3-addr-label {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #E8560A;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .p3-addr-name {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1A1A1A;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .p3-addr-detail {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.7;
+    margin-top: 4px;
+  }
+
+  .p3-dates-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .p3-date-card {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .p3-date-bar {
+    width: 3px;
+    height: 36px;
+    background: #E8560A;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  .p3-date-label {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #8A8A8A;
+    text-transform: uppercase;
+    display: block;
+  }
+  .p3-date-val {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1A1A1A;
+    display: block;
+  }
+
+  /* Invoice table */
+  .p3-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 1px solid #E0E0E0;
+  }
+  .p3-table thead tr {
+    background: #1A1A1A;
+  }
+  .p3-table thead th {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 14px;
+    text-align: left;
+  }
+  .p3-table thead th:not(:first-child) {
+    text-align: center;
+  }
+  .p3-table thead th:last-child {
+    text-align: right;
+  }
+  .p3-table tbody tr {
+    border-bottom: 1px solid #EEEEEC;
+  }
+  .p3-table tbody tr:last-child {
+    border-bottom: none;
+  }
+  .p3-table tbody tr:nth-child(even) {
+    background: #FAFAF8;
+  }
+  .p3-table td {
+    padding: 12px 14px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 12px;
+    color: #333;
+    vertical-align: top;
+  }
+  .p3-table td.desc {
+    font-weight: 500;
+    color: #1A1A1A;
+  }
+  .p3-table td.center { text-align: center; }
+  .p3-table td.right { text-align: right; }
+  .p3-table td.total-cell {
+    text-align: right;
+    font-weight: 600;
+    color: #1A1A1A;
+  }
+  .item-num {
+    display: inline-block;
+    background: #E8560A;
+    color: #fff;
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 2px;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+
+  .p3-totals {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+  }
+  .p3-totals-box {
+    width: 280px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .p3-total-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 16px;
+    border-bottom: 1px solid #EEEEEC;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 12px;
+    color: #555;
+  }
+  .p3-total-row:last-child { border-bottom: none; }
+  .p3-total-row.grand {
+    background: #1A1A1A;
+    color: #fff;
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 14px 16px;
+  }
+  .p3-total-row.grand .t-val { color: #E8560A; }
+
+  .p3-note-row {
+    background: #1A1A1A;
+    padding: 14px 18px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .p3-note-row .note-bar {
+    width: 3px;
+    height: 100%;
+    min-height: 30px;
+    background: #E8560A;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  .p3-note-row p {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 11px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+  }
+  .p3-note-row p strong { color: #E8560A; font-weight: 600; }
+
+  .p3-page-num {
+    position: absolute;
+    bottom: 16px;
+    right: 52px;
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #8A8A8A;
+    text-transform: uppercase;
+  }
+
+  /* ==================== PAGE 4 ==================== */
+  .p4-top-bar {
+    height: 10px;
+    background: #E8560A;
+    flex-shrink: 0;
+  }
+  .p4-dark-header {
+    background: #1A1A1A;
+    padding: 32px 52px 36px 52px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .p4-dark-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+    pointer-events: none;
+  }
+  .p4-confidential {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #E8560A;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 2;
+  }
+  .p4-main-title {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+  }
+  .p4-subtitle {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  .p4-accent-line {
+    height: 3px;
+    background: linear-gradient(90deg, #E8560A 0%, rgba(232,86,10,0.1) 100%);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  .p4-header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  .p4-date {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    font-weight: 300;
+  }
+  .p4-date strong { color: rgba(255,255,255,0.7); font-weight: 500; }
+
+  .p4-body {
+    background: #F7F7F5;
+    flex: 1;
+    padding: 32px 52px 24px 52px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p4-presented-row {
+    display: flex;
+    gap: 0;
+    margin-bottom: 24px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .p4-presented-block {
+    flex: 1;
+    padding: 16px 20px;
+  }
+  .p4-presented-block:first-child {
+    border-right: 1px solid #E0E0E0;
+  }
+  .p4-pb-label {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #E8560A;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .p4-pb-name {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .p4-pb-detail {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 11px;
+    color: #555;
+    line-height: 1.7;
+    margin-top: 4px;
+  }
+
+  .p4-hr {
+    height: 1px;
+    background: #E0E0E0;
+    margin-bottom: 24px;
+    position: relative;
+  }
+  .p4-hr::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2px;
+    width: 60px;
+    background: #E8560A;
+    margin-top: -0.5px;
+  }
+
+  .p4-section-heading {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #1A1A1A;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .p4-section-heading::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #E0E0E0;
+  }
+
+  .p4-exec-summary {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 13px;
+    color: #333;
+    line-height: 1.75;
+    margin-bottom: 24px;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-left: 4px solid #E8560A;
+    border-radius: 0 3px 3px 0;
+  }
+  .p4-exec-summary strong { color: #E8560A; font-weight: 600; }
+
+  .p4-cards {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .p4-card {
+    flex: 1;
+    background: #1A1A1A;
+    border-top: 3px solid #E8560A;
+    padding: 18px 16px;
+    border-radius: 0 0 3px 3px;
+  }
+  .p4-card-title {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #E8560A;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .p4-card-text {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 11px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.65;
+  }
+
+  .p4-cta {
+    background: #E8560A;
+    padding: 18px 24px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .p4-cta-label {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .p4-cta-phone {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  .p4-cta-email {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,0.85);
+    font-weight: 500;
+    margin-top: 4px;
+  }
+  .p4-cta-right {
+    text-align: right;
+  }
+  .p4-cta-right .ready-text {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .p4-footer {
+    background: #1A1A1A;
+    padding: 14px 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+  .p4-footer .f-page {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.35);
+    text-transform: uppercase;
+  }
+  .p4-footer .f-date {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 10px;
+    color: rgba(255,255,255,0.25);
+  }
+
+  /* ==================== LOGO SVG SIZES ==================== */
+  .logo-main { width: 180px; height: auto; }
+  .logo-sig  { width: 68px; height: auto; }
+  .logo-small { width: 110px; height: auto; }
+  .logo-footer { width: 90px; height: auto; }
+
+  /* Wordmark inline styles used in SVG are self-contained */
+
+  /* Bottom page label strip */
+  .page-strip {
+    background: #3D3D3D;
+    padding: 8px 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .page-strip .strip-label {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: rgba(255,255,255,0.35);
+    text-transform: uppercase;
+  }
+  .page-strip .strip-right {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 9px;
+    color: rgba(255,255,255,0.2);
+  }
+</style>
+</head>
+<body>
+
+<!-- Vision Banner -->
+<div class="vision-banner">
+  <span>Nexus Talent Inc. — Présentation d'Identité de Marque</span>
+  VISION B — LA FORCE OPÉRATIONNELLE &nbsp;⭐&nbsp; RECOMMANDÉE
+  <span class="rec-badge">CHOIX PRINCIPAL</span>
+</div>
+
+<!-- ========================================================
+     PAGE 1 — LOGO & IDENTITÉ VISUELLE
+     ======================================================== -->
+<div class="page">
+  <!-- Dark Hero -->
+  <div class="p1-hero">
+    <div class="p1-watermark">NEXUS TALENT</div>
+
+    <!-- Page meta -->
+    <div class="p1-page-meta">
+      <span class="vision-label">Vision B — La Force Opérationnelle ⭐ Recommandée</span>
+      <span class="page-num">01 — Logo &amp; Identité</span>
+    </div>
+
+    <!-- Logo -->
+    <div class="p1-logo-area">
+      <!-- MAIN LOGO SVG -->
+      <svg class="logo-main" viewBox="0 0 220 90" xmlns="http://www.w3.org/2000/svg" aria-label="Nexus Talent Inc. logo">
+        <!-- Hexagon badge -->
+        <polygon points="32,2 58,2 72,26 58,50 32,50 18,26" fill="#1A1A1A" stroke="#3D3D3D" stroke-width="1.5"/>
+        <!-- Orange accent bar top of hex -->
+        <rect x="18" y="2" width="54" height="5" fill="#E8560A" rx="0"/>
+        <!-- Bold N inside hex -->
+        <text x="45" y="43" font-family="'Barlow Condensed', Arial, sans-serif" font-size="38" font-weight="800" fill="#FFFFFF" text-anchor="middle" dominant-baseline="auto">N</text>
+        <!-- Orange diagonal slash accent on N -->
+        <line x1="37" y1="15" x2="46" y2="38" stroke="#E8560A" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+        <!-- Orange accent bar below hex -->
+        <rect x="18" y="53" width="54" height="3" fill="#E8560A" rx="1"/>
+        <!-- Thin orange line extending right -->
+        <rect x="72" y="54.5" width="148" height="1.5" fill="#E8560A" opacity="0.35"/>
+
+        <!-- Wordmark: NEXUS -->
+        <text x="84" y="34" font-family="'Barlow Condensed', Arial, sans-serif" font-size="32" font-weight="800" fill="#FFFFFF" letter-spacing="3" text-anchor="start">NEXUS</text>
+        <!-- Wordmark: TALENT -->
+        <text x="86" y="52" font-family="'Barlow Condensed', Arial, sans-serif" font-size="18" font-weight="600" fill="rgba(255,255,255,0.75)" letter-spacing="6" text-anchor="start">TALENT</text>
+        <!-- Wordmark: INC. -->
+        <text x="194" y="52" font-family="'Barlow Condensed', Arial, sans-serif" font-size="11" font-weight="400" fill="#E8560A" letter-spacing="2" text-anchor="start">INC.</text>
+      </svg>
+
+      <!-- Star recommended badge -->
+      <div class="star-badge">⭐ Recommandée</div>
+    </div>
+
+    <!-- Slogan -->
+    <div class="p1-slogan-row">
+      <div class="p1-slogan">LA FORCE OPÉRATIONNELLE</div>
+    </div>
+  </div>
+
+  <!-- Orange divider -->
+  <div class="orange-divider"></div>
+
+  <!-- Light section -->
+  <div class="p1-light">
+    <!-- Colors -->
+    <div class="section-label">Système de couleurs</div>
+    <div class="color-row">
+      <div class="color-swatch">
+        <div class="swatch-color" style="background:#1A1A1A;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Acier Profond</span>
+          <span class="swatch-hex">#1A1A1A</span>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="swatch-color" style="background:#E8560A;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Orange Industriel</span>
+          <span class="swatch-hex">#E8560A</span>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="swatch-color" style="background:#3D3D3D;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Ardoise</span>
+          <span class="swatch-hex">#3D3D3D</span>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="swatch-color" style="background:#8A8A8A;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Gris Technique</span>
+          <span class="swatch-hex">#8A8A8A</span>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="swatch-color" style="background:#F7F7F5; border: 1px solid #E0E0E0;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Blanc Propre</span>
+          <span class="swatch-hex">#F7F7F5</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typography -->
+    <div class="section-label">Typographie</div>
+    <div class="typo-section">
+      <div class="typo-card">
+        <div class="type-label">Titres — Barlow Condensed</div>
+        <div class="typo-heading-sample">NEXUS TALENT INC.</div>
+        <div class="typo-meta">Barlow Condensed 800 · Uppercase · Letter-spacing 2px</div>
+      </div>
+      <div class="typo-card">
+        <div class="type-label">Corps — Inter</div>
+        <div class="typo-body-sample">Recrutement industriel sans compromis. Des candidats qualifiés, pré-sélectionnés et prêts à travailler.</div>
+        <div class="typo-meta">Inter Regular 400 · Line-height 1.6</div>
+      </div>
+    </div>
+
+    <!-- Values -->
+    <div class="section-label">Valeurs de marque</div>
+    <div class="values-row" style="margin-bottom:24px;">
+      <div class="value-tag">Fiabilité</div>
+      <div class="value-sep">|</div>
+      <div class="value-tag">Efficacité</div>
+      <div class="value-sep">|</div>
+      <div class="value-tag">Résultats</div>
+    </div>
+
+    <!-- Positioning statement -->
+    <div class="positioning-card">
+      <p><strong>Nexus Talent inc.</strong> livre la main-d'oeuvre qualifiée dont vous avez besoin, quand vous en avez besoin. <strong>Recrutement industriel sans compromis</strong> — manufacturier, entrepôt, logistique, distribution.</p>
+    </div>
+  </div>
+
+  <div class="page-strip">
+    <span class="strip-label">Vision B — La Force Opérationnelle</span>
+    <span class="strip-right">Nexus Talent Inc. · Identité de Marque · 2026</span>
+  </div>
+</div>
+
+<!-- ========================================================
+     PAGE 2 — SIGNATURE COURRIEL
+     ======================================================== -->
+<div class="page">
+  <!-- Dark header -->
+  <div class="p2-dark-header">
+    <span class="ph-label">02 — Signature Courriel</span>
+    <span class="ph-vision">Vision B · La Force Opérationnelle</span>
+  </div>
+  <div class="orange-divider"></div>
+
+  <div class="p2-body">
+    <div class="section-label" style="margin-bottom:16px;">Aperçu dans un client de messagerie — Outlook / Gmail compatible</div>
+
+    <!-- Email client mock -->
+    <div class="email-client-wrapper">
+      <!-- Title bar -->
+      <div class="email-client-titlebar">
+        <div class="dot dot-r"></div>
+        <div class="dot dot-y"></div>
+        <div class="dot dot-g"></div>
+        <span style="font-family:'Inter',Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.35);margin-left:10px;">Courriel — Boîte de réception</span>
+      </div>
+      <!-- From / Subject bar -->
+      <div class="email-client-bar">
+        <strong style="color:rgba(255,255,255,0.55);">De:</strong> Yermain Paredes &lt;yerma398@hotmail.com&gt; &nbsp;|&nbsp;
+        <strong style="color:rgba(255,255,255,0.55);">À:</strong> Client · &nbsp;
+        <strong style="color:rgba(255,255,255,0.55);">Objet:</strong> Proposition de recrutement — Nexus Talent Inc.
+      </div>
+
+      <!-- Email body -->
+      <div class="email-body">
+        <p class="email-preview-text">
+          Bonjour <strong>M. Beaumont</strong>,<br><br>
+          Merci pour votre intérêt envers nos services de recrutement industriel. Comme convenu lors de notre échange, vous trouverez ci-joint notre proposition détaillée. N'hésitez pas à me contacter pour toute question.<br><br>
+          Cordialement,
+        </p>
+
+        <!-- SIGNATURE -->
+        <div class="email-sig">
+          <!-- Logo -->
+          <div class="sig-logo-area">
+            <svg class="logo-sig" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="36,3 63,19.5 63,52.5 36,69 9,52.5 9,19.5" fill="#1A1A1A" stroke="#3D3D3D" stroke-width="1.5"/>
+              <rect x="9" y="3" width="54" height="5" fill="#E8560A"/>
+              <text x="36" y="52" font-family="'Barlow Condensed', Arial, sans-serif" font-size="40" font-weight="800" fill="#FFFFFF" text-anchor="middle" dominant-baseline="auto">N</text>
+              <line x1="28" y1="18" x2="38" y2="48" stroke="#E8560A" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+              <rect x="9" y="71" width="54" height="3" fill="#E8560A" rx="1"/>
+            </svg>
+          </div>
+
+          <!-- Content -->
+          <div class="sig-content">
+            <div class="sig-name">Yermain Paredes</div>
+            <div class="sig-title">Directeur Général</div>
+            <div class="sig-company">Nexus Talent Inc.</div>
+            <div class="sig-divider"></div>
+            <div class="sig-contact">
+              <strong>T:</strong> 819-469-6658 &nbsp;|&nbsp; <strong>E:</strong> <a href="mailto:yerma398@hotmail.com">yerma398@hotmail.com</a><br>
+              <strong>A:</strong> 80 Manseau #12, Québec
+            </div>
+            <div class="sig-divider"></div>
+            <div class="sig-sectors">Manufacturier · Industriel · Entrepôt · Logistique · Distribution</div>
+          </div>
+        </div>
+        <div class="sig-bottom-bar"></div>
+        <div class="sig-website">nexustalent.ca</div>
+      </div>
+    </div>
+
+    <!-- Compatibility note -->
+    <div class="compat-note">
+      <strong>Note de compatibilité:</strong> Cette signature utilise une structure en tableau HTML (table-based layout) compatible avec Outlook 2016–2021, Microsoft 365, Gmail, Apple Mail et Thunderbird. La bordure orange gauche, la police de secours système et les couleurs hexadécimales sont supportées sur tous les clients. Taille optimale pour affichage mobile (min. 320px). · <strong>Format de livraison:</strong> fichier .htm + instructions d'installation Outlook/Gmail incluses.
+    </div>
+
+    <!-- Dimensions note -->
+    <div style="margin-top:16px;display:flex;gap:12px;">
+      <div style="flex:1;background:#fff;border:1px solid #E0E0E0;border-left:3px solid #E8560A;border-radius:3px;padding:12px 16px;">
+        <div class="section-label" style="margin-bottom:6px;">Dimensions signature</div>
+        <div style="font-family:'Inter',Arial,sans-serif;font-size:12px;color:#333;line-height:1.8;">
+          Largeur totale: ~600px max.<br>
+          Hauteur: ~120–140px<br>
+          Logo: 68×68px (SVG scalable)
+        </div>
+      </div>
+      <div style="flex:1;background:#fff;border:1px solid #E0E0E0;border-left:3px solid #E8560A;border-radius:3px;padding:12px 16px;">
+        <div class="section-label" style="margin-bottom:6px;">Polices de secours</div>
+        <div style="font-family:'Inter',Arial,sans-serif;font-size:12px;color:#333;line-height:1.8;">
+          Titres: Arial Black, Impact<br>
+          Corps: Arial, Helvetica<br>
+          Compatible email rendering
+        </div>
+      </div>
+      <div style="flex:1;background:#fff;border:1px solid #E0E0E0;border-left:3px solid #E8560A;border-radius:3px;padding:12px 16px;">
+        <div class="section-label" style="margin-bottom:6px;">Couleurs vérifiées</div>
+        <div style="font-family:'Inter',Arial,sans-serif;font-size:12px;color:#333;line-height:1.8;">
+          Bordure: #E8560A<br>
+          Fond: #FFFFFF<br>
+          Texte: #1A1A1A / #555555
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-strip">
+    <span class="strip-label">Vision B — La Force Opérationnelle</span>
+    <span class="strip-right">02 / 04</span>
+  </div>
+</div>
+
+<!-- ========================================================
+     PAGE 3 — FACTURE CORPORATIVE
+     ======================================================== -->
+<div class="page">
+  <!-- Header -->
+  <div class="p3-header">
+    <div class="p3-header-top"></div>
+    <div class="p3-header-content">
+      <div>
+        <div class="p3-invoice-label">03 — Facture Corporative · Vision B</div>
+        <!-- Logo inline -->
+        <svg class="logo-small" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="22,2 42,2 52,19.5 42,37 22,37 12,19.5" fill="#1A1A1A" stroke="#555" stroke-width="1"/>
+          <rect x="12" y="2" width="40" height="4" fill="#E8560A"/>
+          <text x="32" y="33" font-family="'Barlow Condensed', Arial, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle" dominant-baseline="auto">N</text>
+          <line x1="26" y1="10" x2="33" y2="32" stroke="#E8560A" stroke-width="2.5" stroke-linecap="round" opacity="0.65"/>
+          <rect x="12" y="39" width="40" height="2.5" fill="#E8560A" rx="1"/>
+          <rect x="52" y="40" width="120" height="1" fill="#E8560A" opacity="0.3"/>
+          <text x="62" y="26" font-family="'Barlow Condensed', Arial, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" letter-spacing="2" text-anchor="start">NEXUS</text>
+          <text x="64" y="40" font-family="'Barlow Condensed', Arial, sans-serif" font-size="13" font-weight="600" fill="rgba(255,255,255,0.65)" letter-spacing="4" text-anchor="start">TALENT</text>
+          <text x="145" y="40" font-family="'Barlow Condensed', Arial, sans-serif" font-size="9" font-weight="400" fill="#E8560A" letter-spacing="1" text-anchor="start">INC.</text>
+        </svg>
+        <div class="p3-company-sub">80 Manseau #12, Québec &nbsp;|&nbsp; 819-469-6658 &nbsp;|&nbsp; yerma398@hotmail.com</div>
+      </div>
+      <div class="p3-invoice-meta">
+        <div class="p3-inv-title">FACTURE</div>
+        <div class="p3-inv-num">N° NTI-B-2026-0047</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p3-body">
+    <!-- Dates -->
+    <div class="p3-dates-row">
+      <div class="p3-date-card">
+        <div class="p3-date-bar"></div>
+        <div>
+          <span class="p3-date-label">Date de facturation</span>
+          <span class="p3-date-val">4 juin 2026</span>
+        </div>
+      </div>
+      <div class="p3-date-card">
+        <div class="p3-date-bar"></div>
+        <div>
+          <span class="p3-date-label">Date d'échéance</span>
+          <span class="p3-date-val">4 juillet 2026</span>
+        </div>
+      </div>
+      <div class="p3-date-card">
+        <div class="p3-date-bar" style="background:#8A8A8A;"></div>
+        <div>
+          <span class="p3-date-label">Conditions</span>
+          <span class="p3-date-val" style="font-size:14px;">Net 30 jours</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Addresses -->
+    <div class="p3-addresses">
+      <div class="p3-addr-block">
+        <div class="p3-addr-label">Émetteur</div>
+        <div class="p3-addr-name">Nexus Talent Inc.</div>
+        <div class="p3-addr-detail">
+          80 Manseau #12, Québec<br>
+          Yermain Paredes, Directeur Général<br>
+          T: 819-469-6658 · yerma398@hotmail.com
+        </div>
+      </div>
+      <div class="p3-addr-block">
+        <div class="p3-addr-label">Facturé à</div>
+        <div class="p3-addr-name">Industries Beaumont-Prévost Inc.</div>
+        <div class="p3-addr-detail">
+          3245 boul. Industriel, Drummondville (QC) J2B 7K4<br>
+          Att: M. François Beaumont, Directeur RH
+        </div>
+      </div>
+    </div>
+
+    <!-- Line items table -->
+    <table class="p3-table">
+      <thead>
+        <tr>
+          <th style="width:50%;">Description du service</th>
+          <th style="width:10%;">Qté</th>
+          <th style="width:16%;">Prix unitaire</th>
+          <th style="width:14%;">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="desc">
+            <span class="item-num">1</span>
+            Recrutement &amp; sélection — Contremaître de production
+            <div style="font-size:10px;color:#8A8A8A;margin-top:2px;margin-left:28px;">Poste permanent · Secteur manufacturier</div>
+          </td>
+          <td class="center">1</td>
+          <td class="right">3 200,00 $</td>
+          <td class="total-cell">3 200,00 $</td>
+        </tr>
+        <tr>
+          <td class="desc">
+            <span class="item-num">2</span>
+            Recrutement &amp; sélection — Opérateurs de chariot élévateur classe 4
+            <div style="font-size:10px;color:#8A8A8A;margin-top:2px;margin-left:28px;">Postes permanents · Entrepôt / Logistique</div>
+          </td>
+          <td class="center">2</td>
+          <td class="right">1 800,00 $</td>
+          <td class="total-cell">3 600,00 $</td>
+        </tr>
+        <tr>
+          <td class="desc">
+            <span class="item-num">3</span>
+            Recrutement &amp; sélection — Coordonnateur logistique senior
+            <div style="font-size:10px;color:#8A8A8A;margin-top:2px;margin-left:28px;">Poste permanent · Logistique / Distribution</div>
+          </td>
+          <td class="center">1</td>
+          <td class="right">2 800,00 $</td>
+          <td class="total-cell">2 800,00 $</td>
+        </tr>
+        <tr>
+          <td class="desc">
+            <span class="item-num">4</span>
+            Vérifications d'antécédents judiciaires et de crédit
+            <div style="font-size:10px;color:#8A8A8A;margin-top:2px;margin-left:28px;">Tous candidats sélectionnés</div>
+          </td>
+          <td class="center">4</td>
+          <td class="right">120,00 $</td>
+          <td class="total-cell">480,00 $</td>
+        </tr>
+        <tr>
+          <td class="desc">
+            <span class="item-num">5</span>
+            Frais de coordination, suivi et garantie de placement (30 jours)
+            <div style="font-size:10px;color:#8A8A8A;margin-top:2px;margin-left:28px;">Garantie de remplacement incluse</div>
+          </td>
+          <td class="center">1</td>
+          <td class="right">420,00 $</td>
+          <td class="total-cell">420,00 $</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Totals -->
+    <div class="p3-totals">
+      <div class="p3-totals-box">
+        <div class="p3-total-row">
+          <span>Sous-total</span>
+          <span>10 500,00 $</span>
+        </div>
+        <div class="p3-total-row">
+          <span>TPS (5%)</span>
+          <span>525,00 $</span>
+        </div>
+        <div class="p3-total-row">
+          <span>TVQ (9,975%)</span>
+          <span>1 047,38 $</span>
+        </div>
+        <div class="p3-total-row grand">
+          <span>TOTAL</span>
+          <span class="t-val">12 072,38 $</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Note -->
+    <div class="p3-note-row">
+      <div class="note-bar"></div>
+      <p><strong>Modalités de paiement:</strong> Virement Interac ou chèque à l'ordre de Nexus Talent Inc. · Numéro TPS: à compléter · Numéro TVQ: à compléter · Tout paiement en retard est sujet à des frais de 1,5% par mois. · <strong>Merci de votre confiance.</strong></p>
+    </div>
+  </div>
+
+  <div class="page-strip">
+    <span class="strip-label">Vision B — La Force Opérationnelle</span>
+    <span class="strip-right">03 / 04</span>
+  </div>
+</div>
+
+<!-- ========================================================
+     PAGE 4 — PREMIÈRE PAGE DE PROPOSITION COMMERCIALE
+     ======================================================== -->
+<div class="page">
+  <!-- Top orange bar -->
+  <div class="p4-top-bar"></div>
+
+  <!-- Dark header -->
+  <div class="p4-dark-header">
+    <div class="p4-confidential">Confidentiel — Préparé exclusivement pour Groupe Industriel Fortier ltée</div>
+    <div class="p4-main-title">Proposition de Partenariat<br>en Recrutement Industriel</div>
+    <div class="p4-subtitle">Services spécialisés — Manufacturier &nbsp;•&nbsp; Logistique &nbsp;•&nbsp; Entrepôt</div>
+    <div class="p4-accent-line"></div>
+    <div class="p4-header-bottom">
+      <!-- Logo -->
+      <svg class="logo-small" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="22,2 42,2 52,19.5 42,37 22,37 12,19.5" fill="#1A1A1A" stroke="#555" stroke-width="1"/>
+        <rect x="12" y="2" width="40" height="4" fill="#E8560A"/>
+        <text x="32" y="33" font-family="'Barlow Condensed', Arial, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle" dominant-baseline="auto">N</text>
+        <line x1="26" y1="10" x2="33" y2="32" stroke="#E8560A" stroke-width="2.5" stroke-linecap="round" opacity="0.65"/>
+        <rect x="12" y="39" width="40" height="2.5" fill="#E8560A" rx="1"/>
+        <rect x="52" y="40" width="120" height="1" fill="#E8560A" opacity="0.3"/>
+        <text x="62" y="26" font-family="'Barlow Condensed', Arial, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" letter-spacing="2" text-anchor="start">NEXUS</text>
+        <text x="64" y="40" font-family="'Barlow Condensed', Arial, sans-serif" font-size="13" font-weight="600" fill="rgba(255,255,255,0.65)" letter-spacing="4" text-anchor="start">TALENT</text>
+        <text x="145" y="40" font-family="'Barlow Condensed', Arial, sans-serif" font-size="9" font-weight="400" fill="#E8560A" letter-spacing="1" text-anchor="start">INC.</text>
+      </svg>
+      <div class="p4-date"><strong>Juin 2026</strong> &nbsp;|&nbsp; Document confidentiel</div>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="p4-body">
+    <!-- Présenté à / Présenté par -->
+    <div class="p4-presented-row">
+      <div class="p4-presented-block">
+        <div class="p4-pb-label">Présenté à</div>
+        <div class="p4-pb-name">Groupe Industriel Fortier ltée</div>
+        <div class="p4-pb-detail">
+          M. Patrick Fortier, VP Opérations<br>
+          Recrutement industriel — secteurs manufacturier, logistique, entrepôt
+        </div>
+      </div>
+      <div class="p4-presented-block">
+        <div class="p4-pb-label">Présenté par</div>
+        <div class="p4-pb-name">Nexus Talent Inc.</div>
+        <div class="p4-pb-detail">
+          Yermain Paredes, Directeur Général<br>
+          819-469-6658 &nbsp;|&nbsp; yerma398@hotmail.com
+        </div>
+      </div>
+    </div>
+
+    <div class="p4-hr"></div>
+
+    <!-- Sommaire exécutif -->
+    <div class="p4-section-heading">Sommaire Exécutif</div>
+    <div class="p4-exec-summary">
+      Le marché du travail industriel québécois est en <strong>pénurie</strong>. Chaque poste vacant vous coûte en productivité, en heures supplémentaires et en opportunités manquées. <strong>Nexus Talent livre des candidats qualifiés, pré-sélectionnés et prêts à travailler</strong> — en <strong>72 heures ou moins</strong> pour les postes temporaires, en <strong>15 jours</strong> pour les postes permanents. Fini les processus d'embauche interminables. Fini les mauvaises surprises. Bienvenue dans le recrutement industriel sans compromis.
+    </div>
+
+    <!-- Value prop cards -->
+    <div class="p4-cards">
+      <div class="p4-card">
+        <div class="p4-card-title">Rapidité d'Exécution</div>
+        <div class="p4-card-text">Candidats disponibles en 72h pour postes temporaires. 15 jours pour les postes permanents. Cadence industrielle, pas bureaucratique.</div>
+      </div>
+      <div class="p4-card">
+        <div class="p4-card-title">Garantie Béton</div>
+        <div class="p4-card-text">30 jours de garantie sur tout placement permanent. Remplacement sans frais si le candidat ne convient pas. Zéro risque pour vous.</div>
+      </div>
+      <div class="p4-card">
+        <div class="p4-card-title">Connaissance Terrain</div>
+        <div class="p4-card-text">Nos recruteurs connaissent votre réalité: horaires rotatifs, EPI, normes ISO, cadence de production. On parle votre langage.</div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="p4-cta">
+      <div>
+        <div class="p4-cta-label">Parlons résultats</div>
+        <div class="p4-cta-phone">819-469-6658</div>
+        <div class="p4-cta-email">yerma398@hotmail.com</div>
+      </div>
+      <div class="p4-cta-right">
+        <div class="ready-text">Prêt à embaucher<br>en 72 heures?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="p4-footer">
+    <!-- Logo footer -->
+    <svg class="logo-footer" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="22,2 42,2 52,19.5 42,37 22,37 12,19.5" fill="#3D3D3D" stroke="#555" stroke-width="1"/>
+      <rect x="12" y="2" width="40" height="3" fill="#E8560A" opacity="0.7"/>
+      <text x="32" y="33" font-family="'Barlow Condensed', Arial, sans-serif" font-size="28" font-weight="800" fill="rgba(255,255,255,0.6)" text-anchor="middle" dominant-baseline="auto">N</text>
+      <line x1="26" y1="10" x2="33" y2="32" stroke="#E8560A" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+      <rect x="12" y="39" width="40" height="2" fill="#E8560A" rx="1" opacity="0.6"/>
+      <rect x="52" y="40" width="100" height="1" fill="#E8560A" opacity="0.2"/>
+      <text x="62" y="26" font-family="'Barlow Condensed', Arial, sans-serif" font-size="24" font-weight="800" fill="rgba(255,255,255,0.45)" letter-spacing="2" text-anchor="start">NEXUS</text>
+      <text x="64" y="40" font-family="'Barlow Condensed', Arial, sans-serif" font-size="13" font-weight="600" fill="rgba(255,255,255,0.3)" letter-spacing="4" text-anchor="start">TALENT</text>
+      <text x="145" y="40" font-family="'Barlow Condensed', Arial, sans-serif" font-size="9" font-weight="400" fill="#E8560A" letter-spacing="1" opacity="0.5" text-anchor="start">INC.</text>
+    </svg>
+    <span class="f-page">Page 1 de 8</span>
+    <span class="f-date">Juin 2026 · Confidentiel</span>
+  </div>
+
+  <div class="page-strip">
+    <span class="strip-label">Vision B — La Force Opérationnelle &nbsp;⭐&nbsp; Recommandée</span>
+    <span class="strip-right">04 — Proposition Commerciale</span>
+  </div>
+</div>
+
+</body>
+</html>
