@@ -1334,6 +1334,33 @@
     text-transform: uppercase;
     color: #CBD5E1;
   }
+
+  /* ===== IMPRESSION / PDF — 1 page A4 par élément ===== */
+  @media print {
+    html, body {
+      background: #ffffff !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      gap: 0 !important;
+      display: block !important;
+    }
+    .vision-badge-wrapper, .vision-banner, .vision-badge { display: none !important; }
+    .page {
+      width: 794px !important;
+      height: 1123px !important;
+      min-height: 1123px !important;
+      margin: 0 !important;
+      box-shadow: none !important;
+      overflow: hidden !important;
+      page-break-after: always;
+      break-after: page;
+      page-break-inside: avoid;
+    }
+    .page:last-of-type {
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+  }
 </style>
 </head>
 <body>
