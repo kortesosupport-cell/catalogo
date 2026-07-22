@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette KORTESO : bleu profond, noir, touches de bleu lumineux,
+     arrière-plan blanc cassé. */
+  --color-brand-50: #eef4fd;
+  --color-brand-100: #dce8fb;
+  --color-brand-200: #b9d1f6;
+  --color-brand-500: #2e6ff2;
+  --color-brand-600: #2258c9;
+  --color-brand-700: #1c4494;
+  --color-brand-800: #143059;
+  --color-brand-900: #0f2440;
+  --color-brand-950: #0a182b;
+
+  --color-canvas: #f6f7f9;
+  --color-ink: #101418;
+
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
